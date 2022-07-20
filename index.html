@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styling/style.css">
+  <script src="scripting/menu.js" defer></script>
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+
+  <nav class="nav-box">
+    <div class="logo-nav">
+      <h1 id="logo">snap</h1>
+      <ul class="nav-left-box">
+        <li>
+          <div class="menu">
+            <div class="btn">
+              <h4>Features</h4>
+              <img class="arrow" src="/images/icon-arrow-down.svg">
+            </div>
+            <div class="drop-content">
+              <div class="item">
+                <img class="icon" src="/images/icon-todo.svg" alt="icon-todo">
+                <a href="#">Todo List</a>
+              </div>
+              <div class="item">
+                <img class="icon" src="/images/icon-calendar.svg" alt="icon-calendar">
+                <a href="#">Calender</a>
+              </div>
+              <div class="item">
+                <img class="icon" src="/images/icon-reminders.svg" alt="icon-reminders">
+                <a href="#">Reminders</a>
+              </div>
+              <div class="item">
+                <img class="icon" src="/images/icon-planning.svg" alt="icon-planning">
+                <a href="#">Planning</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="menu">
+            <div class="btn">
+              <h4>Company</h4>
+              <img class="arrow" src="/images/icon-arrow-down.svg">
+            </div>
+            <div class="drop-content">
+              <div class="item">
+                <a href="#">History</a>
+              </div>
+              <div class="item">
+                <a href="#">Our Team</a>
+              </div>
+              <div class="item">
+                <a href="#">Blog</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+    </div>
+    <div class="nav-right-box">
+      <input class="login" type="button" value="Login">
+      <input class="register" type="button" value="Register">
+      <div class="hamburger-menu">
+        <img src="/images/icon-menu.svg" alt="icon-menu">
+      </div>
+    </div>
+  </nav>
+  
+  <main class="container">
+    <section class="left-sec">
+      <h1>Make <br id="break-line"> remote work</h1>
+      <p>
+        Get your team in sync, no matter your loaction.
+        Streamline processes, create team rituals, and
+        watch productivity soar.
+      </p>
+      <input type="button" value="Learn more">
+      <div class="sponsers">
+        <img src="/images/client-databiz.svg" alt="databiz">
+        <img src="/images/client-audiophile.svg" alt="audiophile">
+        <img src="/images/client-meet.svg" alt="meet">
+        <img src="/images/client-maker.svg" alt="maker">
+      </div>
+    </section>
+    <section class="right-sec">
+      <img class="background-img" src="/images/image-hero-desktop.png" alt="hero-desktop">
+    </section>
+  </main>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Muhammad Selim</a>.
+  </div>
+</body>
+</html>
