@@ -170,7 +170,7 @@ body {
     gap: 40px;
 }
 
-.left-sec h2 {
+.left-sec .big {
     font-size: 60px;
     font-weight: 700;
 }
