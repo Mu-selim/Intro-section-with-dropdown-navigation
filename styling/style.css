@@ -20,6 +20,10 @@
     font-family: 'Epilogue', sans-serif;
 }
 
+body {
+    background-color: var(--Almost-White);
+}
+
 .nav-box {
     width: 100%;
     height: 60px;
@@ -209,8 +213,8 @@
 }
 
 .background-img {
-    width: 80%;
-    height: 100%;
+    width: 70%;
+    height: 90%;
 }
 
 .attribution {
