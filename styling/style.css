@@ -22,12 +22,14 @@
 
 body {
     background-color: var(--Almost-White);
+    height: 100vh;
+    /*overflow: hidden;*/
 }
+
 
 .nav-box {
     width: 100%;
-    height: 60px;
-    margin-top: 8px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -152,8 +154,13 @@ body {
     display: none;
 }
 
+.hamburger-menu-res {
+    display: none;
+    cursor: pointer;
+}
+
 .container {
-    width: calc(100%-80px);
+    max-width: calc(100%-100px);
     height: 76vh;
     margin: 0 80px;
     display: flex;
@@ -252,10 +259,6 @@ body {
         font-size: 12px;
     }
 
-    .container {
-        margin: 0 40px;
-    }
-
     .left-sec h1 {
         font-size: 40px;
     }
@@ -288,8 +291,29 @@ body {
         display: none;
     }
 
+    .nav-box {
+        height: 60px;
+    }
+
+    .nav-right-box {
+        position: relative;
+    }
+    
+
     .hamburger-menu {
         display: flex;
+        position: fixed;
+        top: 4%;
+        left: 92%;
+    }
+
+    .hamburger-menu-res {
+        position: absolute;
+        display: flex;
+        width: 100px;
+        height: 20vh;
+        background-color: aqua;
+        padding-top: 200px;
     }
 
     #logo {
@@ -300,11 +324,20 @@ body {
         font-size: 12px;
     }
 
+    #logo {
+        margin: 0;
+        margin-left: 16px;
+    }
+
+    .nav-right-box {
+        margin: 0;
+        margin-right: 16px;
+    }
+
     .container {
         flex-direction: column-reverse;
-        width: 100%;
         height: 80%;
-        margin: 0;
+        margin-top: 20px;
         gap: 0;
     }
 
@@ -347,19 +380,31 @@ body {
     }
 }
 
-@media (max-width: 385px) {
+@media (max-width: 430px) {
+
+    .container {
+        max-width: 100%;
+    }
     .left-sec {
         gap: 16px;
         margin: 12px;
     }
 
+    .left-sec p {
+        margin: 0;
+    }
+
     .sponsers {
-        margin: 0 12px;
-        gap: 6px;
+        margin: 0 20px;
+        gap: 4px;
     }
 
     .sponsers img {
-        width: 15%;
-        height: 15%;
+        width: 20%;
+        height: 20%;
+    }
+
+    .attribution, .attribution * {
+        font-size: 8px;
     }
 }
